@@ -1,27 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
+    <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 
-    <title>Document</title>
+    <title>Video Background Page</title>
 </head>
 <body>
-
-    <header class="global-header">
-        <div class="left-content">
-            <img src="/images/logo.jpg" alt="Logo" class="logo">
-            <h1 class="title">ev bird</h1>
-        </div>
-        <div class="right-content">
-            <a href="#" class="social-media">Social Media</a>
-            <a href="#" class="merch-link">Merch</a>
-        </div>
-    </header> 
-
-
-    <div id='product-component-1697293195618'></div>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="/images/yellow.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <body>
+        <header class="global-header">
+            <div class="left-content">
+                <img src="/images/logo.jpg" alt="Logo" class="logo">
+                <h1 class="title">EV BIRD</h1>
+            </div>
+            <body>
+                <div class="social-widget">
+                    <a href="https://www.instagram.com/evbird1/" target="_blank" class="social-link instagram"></a>
+                    <a href="https://www.tiktok.com/@evbird1" target="_blank" class="social-link tiktok"></a>
+                    <a href="https://evbird.bandcamp.com" target="_blank" class="social-link bandcamp"></a>
+                    <a href="https://open.spotify.com/artist/5ZLnYZBRZimCRU1vJzzGsI?si=QcTMaQstQW6T5U_pQcSGvA" class="social-link spotify"></a>
+                </div>
+        </header> 
+     </div>
+     <!-- button & product -->
+     <div class="card container">
+     <div id='product-component-1697323347427'></div>
+    </div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -50,62 +67,62 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: '9103543009585',
-        node: document.getElementById('product-component-1697293195618'),
+        node: document.getElementById('product-component-1697323347427'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0",
-          "margin-bottom": "50px"
-        },
-        "text-align": "left"
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px",
+          
+        }
       },
+      
       "title": {
-        "font-size": "26px"
+        "font-family": "Roboto, sans-serif",
+        "color": "#1e1717"
       },
       "button": {
         "font-family": "Roboto, sans-serif",
         "font-weight": "bold",
-        "color": "#0a0505",
+        "color": "#d9ba0e",
         ":hover": {
-          "color": "#0a0505",
-          "background-color": "#d97e41"
+          "color": "#d9ba0e",
+          "background-color": "#494442"
         },
-        "background-color": "#f18c48",
+        "background-color": "#2b2827",
         ":focus": {
-          "background-color": "#d97e41"
+          "background-color": "#494442"
         },
-        "border-radius": "40px",
-        "padding-left": "30px",
-        "padding-right": "30px"
+        "border-radius": "11px",
+        "padding-left": "60px",
+        "padding-right": "60px"
       },
       "price": {
-        "font-size": "18px"
+        "font-size": "17px",
+        "color": "#231c1c"
       },
       "compareAt": {
-        "font-size": "15.299999999999999px"
+        "font-size": "14.45px",
+        "color": "#231c1c"
       },
       "unitPrice": {
-        "font-size": "15.299999999999999px"
+        "font-size": "14.45px",
+        "color": "#231c1c"
       },
       "description": {
         "color": "#130303"
       }
     },
-    "layout": "horizontal",
+    "buttonDestination": "modal",
     "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true,
-      "description": true
+      "options": false
     },
-    "width": "100%",
     "text": {
-      "button": "BUY"
+      "button": "View product"
     },
     "googleFonts": [
       "Roboto"
@@ -138,18 +155,18 @@
       "button": {
         "font-family": "Roboto, sans-serif",
         "font-weight": "bold",
-        "color": "#0a0505",
+        "color": "#d9ba0e",
         ":hover": {
-          "color": "#0a0505",
-          "background-color": "#d97e41"
+          "color": "#d9ba0e",
+          "background-color": "#494442"
         },
-        "background-color": "#f18c48",
+        "background-color": "#2b2827",
         ":focus": {
-          "background-color": "#d97e41"
+          "background-color": "#494442"
         },
-        "border-radius": "40px",
-        "padding-left": "30px",
-        "padding-right": "30px"
+        "border-radius": "11px",
+        "padding-left": "60px",
+        "padding-right": "60px"
       },
       "title": {
         "font-family": "Helvetica Neue, sans-serif",
@@ -189,22 +206,26 @@
       "button": "Add to cart"
     }
   },
-  "option": {},
+  "option": {
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
   "cart": {
     "styles": {
       "button": {
         "font-family": "Roboto, sans-serif",
         "font-weight": "bold",
-        "color": "#0a0505",
+        "color": "#d9ba0e",
         ":hover": {
-          "color": "#0a0505",
-          "background-color": "#d97e41"
+          "color": "#d9ba0e",
+          "background-color": "#494442"
         },
-        "background-color": "#f18c48",
+        "background-color": "#2b2827",
         ":focus": {
-          "background-color": "#d97e41"
+          "background-color": "#494442"
         },
-        "border-radius": "40px"
+        "border-radius": "11px"
       }
     },
     "text": {
@@ -220,22 +241,22 @@
       "toggle": {
         "font-family": "Roboto, sans-serif",
         "font-weight": "bold",
-        "background-color": "#f18c48",
+        "background-color": "#2b2827",
         ":hover": {
-          "background-color": "#d97e41"
+          "background-color": "#494442"
         },
         ":focus": {
-          "background-color": "#d97e41"
+          "background-color": "#494442"
         }
       },
       "count": {
-        "color": "#0a0505",
+        "color": "#d9ba0e",
         ":hover": {
-          "color": "#0a0505"
+          "color": "#d9ba0e"
         }
       },
       "iconPath": {
-        "fill": "#0a0505"
+        "fill": "#d9ba0e"
       }
     },
     "googleFonts": [
@@ -247,8 +268,18 @@
     });
   }
 })();
-/*]]>*/
+
 </script>
-</body>
-</html>
+
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+   
 
