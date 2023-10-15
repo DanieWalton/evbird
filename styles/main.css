@@ -254,6 +254,11 @@ iframe {
 }
 
 /* merch */
+
+.widget-container {
+    z-index: 1; /* set higher z-index value */
+    position: relative; /* position must be set for z-index to work */
+  }
 @media (max-width: 950px) {
   .container{
     width: 90%;
