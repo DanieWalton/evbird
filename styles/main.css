@@ -104,10 +104,21 @@ body, html {
     display: flex;
     align-items: center;
 }
+.merch-link{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: #fff;
+    border: 2px solid #3498db;
+    border-radius: 30px;
+    transition: all 0.3s ease;
 
+}
 /* Styling links on hover */
 .social-media:hover, .merch-link:hover {
-    text-decoration: underline;
+    transform: scale(1.2); /* Increase the size on hover */
+    filter: brightness(1.5);
+
 }
 
 .logo img {
