@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rubik Mono One', monospace;
-    font-size: 10px;
+    
     
 }
 
@@ -159,7 +159,12 @@ body, html {
     border-radius: 4px;
     padding: 20px;
     transition: all .3s ease-in;
+    font-size: 9px;
     
+}
+
+.card-text h1{
+    font-size: 9px;
 }
 .card > *{
     padding: 10px;
@@ -187,11 +192,8 @@ body, html {
 .card:nth-child(3) .card-image{
     background-image: url(/images/logo.jpg);
 }
-.merch-image{
-    display: flex;
-    width: calc(100%/3);
-
-    
+.card-image-t-shirt{
+    background-image: url(/images/tshirt.jpg);
 }
 
 .card:hover{
@@ -251,11 +253,6 @@ iframe {
 }
 
 /* merch */
-.product-component-1697323347427{
-   
-
-
-}
 @media (max-width: 950px) {
   .container{
     width: 90%;
